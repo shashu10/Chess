@@ -1,0 +1,303 @@
+\hypertarget{classgame_1_1_board}{\section{game.\-Board Class Reference}
+\label{classgame_1_1_board}\index{game.\-Board@{game.\-Board}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgame_1_1_board_a03ab3e485bfe19fc57cc4985b252633b}{Board} (int board\-Type)
+\item 
+boolean \hyperlink{classgame_1_1_board_ad42721c60eee469c46075ee976c4fe37}{empty\-At} (\hyperlink{classgame_1_1_position}{Position} pos)
+\item 
+boolean \hyperlink{classgame_1_1_board_a9a0acc7212f18f11d2ea71248ee0641b}{occupied\-At} (\hyperlink{classgame_1_1_position}{Position} pos)
+\item 
+int \hyperlink{classgame_1_1_board_ae945b5be4a7c7ded9abf70486f564389}{get\-Piece\-Type\-At} (\hyperlink{classgame_1_1_position}{Position} pos)
+\item 
+\hyperlink{classpieces_1_1_piece}{Piece} \hyperlink{classgame_1_1_board_ab33022a9aed668318676e718d7d67b20}{get\-Piece\-At} (\hyperlink{classgame_1_1_position}{Position} pos)
+\item 
+boolean \hyperlink{classgame_1_1_board_ac84d149dded8dc8b106cec222d20933c}{points\-Are\-Opponents} (\hyperlink{classgame_1_1_position}{Position} a, \hyperlink{classgame_1_1_position}{Position} b)
+\item 
+boolean \hyperlink{classgame_1_1_board_ae8c779458e916755cd15c672dbe7628b}{points\-Are\-Allies} (\hyperlink{classgame_1_1_position}{Position} a, \hyperlink{classgame_1_1_position}{Position} b)
+\item 
+boolean \hyperlink{classgame_1_1_board_a707fca7d3091d8af2ba7e66fcea90e31}{straight\-Or\-Diag\-Is\-Clear} (\hyperlink{classgame_1_1_position}{Position} start, \hyperlink{classgame_1_1_position}{Position} end)
+\item 
+\hyperlink{classpieces_1_1_piece}{Piece} \hyperlink{classgame_1_1_board_aeb0730b986f552300a5a68d7a68bd8d7}{remove\-Piece\-From} (\hyperlink{classgame_1_1_position}{Position} pos)
+\item 
+void \hyperlink{classgame_1_1_board_a88e794ba7dec65d4b8582016615dec0f}{add\-Piece\-To} (\hyperlink{classgame_1_1_position}{Position} pos, \hyperlink{classpieces_1_1_piece}{Piece} p)
+\item 
+void \hyperlink{classgame_1_1_board_a33d619089bcaef94b641ecd6d014cfac}{print\-Board} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classgame_1_1_board_ad08736b75fde9ed768c7842759b442f8}{get\-Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpieces_1_1_piece}{Piece} \hyperlink{classgame_1_1_board_ae468c82687902428871a19693c923c15}{white\-King}
+\item 
+\hyperlink{classpieces_1_1_piece}{Piece} \hyperlink{classgame_1_1_board_a3208a9b2a809f279c2f33f2f87a9a68c}{black\-King}
+\item 
+\hyperlink{classpieces_1_1_piece}{Piece}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classgame_1_1_board_a7b235a9a7c1dbfd5373366fe8bd2c4e2}{board}
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classgame_1_1_board_aef78af0593e283d51122b0aff9e98d3e}{board\-Int\-Array}
+\item 
+int \hyperlink{classgame_1_1_board_acd643578da78ae9b61cbc0b962d03bc7}{check} = \hyperlink{classpieces_1_1_piece_a5d79a14b2b47d6699449dd3e015f0392}{Piece.\-E\-M\-P\-T\-Y}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \hyperlink{classgame_1_1_board_ad8df367d654710a005091c644088879e}{C\-L\-A\-S\-S\-I\-C} = 1
+\item 
+static final int \hyperlink{classgame_1_1_board_a1bac85e381255ac84399072df7b863e9}{C\-U\-S\-T\-O\-M} = 2
+\item 
+static final int \hyperlink{classgame_1_1_board_a1919fd52c264639c24155b333495a11c}{E\-M\-P\-T\-Y} = 0
+\item 
+static final int \hyperlink{classgame_1_1_board_abeabe8126dcd677e8570991415155513}{P\-A\-W\-N} = 1
+\item 
+static final int \hyperlink{classgame_1_1_board_a6e93b6ff58a5e29c8067eaf569acd7d1}{R\-O\-O\-K} = 2
+\item 
+static final int \hyperlink{classgame_1_1_board_a805c2fa05787d3a91d4cbf34d74970f3}{K\-N\-I\-G\-H\-T} = 3
+\item 
+static final int \hyperlink{classgame_1_1_board_a43354b0544e528583e783c228b3016a3}{B\-I\-S\-H\-O\-P} = 4
+\item 
+static final int \hyperlink{classgame_1_1_board_a010790144c6c1e42d97ce588d1522184}{Q\-U\-E\-E\-N} = 5
+\item 
+static final int \hyperlink{classgame_1_1_board_aa90eb06edcc6b4159963daa2bb83fa37}{K\-I\-N\-G} = 6
+\item 
+static final int \hyperlink{classgame_1_1_board_aa68c679fcb4744729d246aba79e7613a}{F\-L\-Y} = 7
+\item 
+static final int \hyperlink{classgame_1_1_board_a7f0beeebc30980894df8aec277501cd5}{F\-L\-Y\-T\-R\-A\-P} = 8
+\item 
+static final int \hyperlink{classgame_1_1_board_ad3b4223ca4e14051a8bdd78a95b38071}{W\-H\-I\-T\-E} = 1
+\item 
+static final int \hyperlink{classgame_1_1_board_a6495a2020e20b656f5e82cf55cae41f0}{B\-L\-A\-C\-K} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgame_1_1_board_afdb8d18115d6485c6c428345ee14172b}{fill\-Board} (int board\-Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classgame_1_1_board}{Board} class represents the Chess board and tracks the pieces. \begin{DoxyAuthor}{Author}
+Shashank Bharadwaj 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Wed, 4 Sep 2013 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgame_1_1_board_a03ab3e485bfe19fc57cc4985b252633b}{\index{game\-::\-Board@{game\-::\-Board}!Board@{Board}}
+\index{Board@{Board}!game::Board@{game\-::\-Board}}
+\subsubsection[{Board}]{\setlength{\rightskip}{0pt plus 5cm}game.\-Board.\-Board (
+\begin{DoxyParamCaption}
+\item[{int}]{board\-Type}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_a03ab3e485bfe19fc57cc4985b252633b}
+Constructor creates an 8x8 array with chess pieces in initial configuration. Piece numbering\-: 1-\/6. White pieces are + and Black are -\/ Eg. Black rook will be -\/2 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgame_1_1_board_a88e794ba7dec65d4b8582016615dec0f}{\index{game\-::\-Board@{game\-::\-Board}!add\-Piece\-To@{add\-Piece\-To}}
+\index{add\-Piece\-To@{add\-Piece\-To}!game::Board@{game\-::\-Board}}
+\subsubsection[{add\-Piece\-To}]{\setlength{\rightskip}{0pt plus 5cm}void game.\-Board.\-add\-Piece\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{pos, }
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_a88e794ba7dec65d4b8582016615dec0f}
+adds a piece to its data structures. Must be called from a move function 
+\begin{DoxyParams}{Parameters}
+{\em pos,\-:} & position to add piece \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgame_1_1_board_ad42721c60eee469c46075ee976c4fe37}{\index{game\-::\-Board@{game\-::\-Board}!empty\-At@{empty\-At}}
+\index{empty\-At@{empty\-At}!game::Board@{game\-::\-Board}}
+\subsubsection[{empty\-At}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Board.\-empty\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_ad42721c60eee469c46075ee976c4fe37}
+Checks if a position is empty 
+\begin{DoxyParams}{Parameters}
+{\em pos,\-:} & position on the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if empty, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_board_afdb8d18115d6485c6c428345ee14172b}{\index{game\-::\-Board@{game\-::\-Board}!fill\-Board@{fill\-Board}}
+\index{fill\-Board@{fill\-Board}!game::Board@{game\-::\-Board}}
+\subsubsection[{fill\-Board}]{\setlength{\rightskip}{0pt plus 5cm}void game.\-Board.\-fill\-Board (
+\begin{DoxyParamCaption}
+\item[{int}]{board\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classgame_1_1_board_afdb8d18115d6485c6c428345ee14172b}
+Fills the board with pieces 
+\begin{DoxyParams}{Parameters}
+{\em board\-Type,\-:} & Classic board or Custom board \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgame_1_1_board_ab33022a9aed668318676e718d7d67b20}{\index{game\-::\-Board@{game\-::\-Board}!get\-Piece\-At@{get\-Piece\-At}}
+\index{get\-Piece\-At@{get\-Piece\-At}!game::Board@{game\-::\-Board}}
+\subsubsection[{get\-Piece\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} game.\-Board.\-get\-Piece\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_ab33022a9aed668318676e718d7d67b20}
+Gets the piece object at a position on the board \begin{DoxyReturn}{Returns}
+Piece object on success, null if empty 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_board_ae945b5be4a7c7ded9abf70486f564389}{\index{game\-::\-Board@{game\-::\-Board}!get\-Piece\-Type\-At@{get\-Piece\-Type\-At}}
+\index{get\-Piece\-Type\-At@{get\-Piece\-Type\-At}!game::Board@{game\-::\-Board}}
+\subsubsection[{get\-Piece\-Type\-At}]{\setlength{\rightskip}{0pt plus 5cm}int game.\-Board.\-get\-Piece\-Type\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_ae945b5be4a7c7ded9abf70486f564389}
+Gets the piece\-Type at a position on the board \begin{DoxyReturn}{Returns}
+piece\-Type on success, 0 if empty 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_board_ad08736b75fde9ed768c7842759b442f8}{\index{game\-::\-Board@{game\-::\-Board}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!game::Board@{game\-::\-Board}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}static int game.\-Board.\-get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_ad08736b75fde9ed768c7842759b442f8}
+Getter \hypertarget{classgame_1_1_board_a9a0acc7212f18f11d2ea71248ee0641b}{\index{game\-::\-Board@{game\-::\-Board}!occupied\-At@{occupied\-At}}
+\index{occupied\-At@{occupied\-At}!game::Board@{game\-::\-Board}}
+\subsubsection[{occupied\-At}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Board.\-occupied\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_a9a0acc7212f18f11d2ea71248ee0641b}
+Checks if a position is occupied 
+\begin{DoxyParams}{Parameters}
+{\em pos,\-:} & position on the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if occupied, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_board_ae8c779458e916755cd15c672dbe7628b}{\index{game\-::\-Board@{game\-::\-Board}!points\-Are\-Allies@{points\-Are\-Allies}}
+\index{points\-Are\-Allies@{points\-Are\-Allies}!game::Board@{game\-::\-Board}}
+\subsubsection[{points\-Are\-Allies}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Board.\-points\-Are\-Allies (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{a, }
+\item[{{\bf Position}}]{b}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_ae8c779458e916755cd15c672dbe7628b}
+Checks if Piece p and piece at pos are allies. Spaces must be occupied \begin{DoxyReturn}{Returns}
+true if they are allies, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_board_ac84d149dded8dc8b106cec222d20933c}{\index{game\-::\-Board@{game\-::\-Board}!points\-Are\-Opponents@{points\-Are\-Opponents}}
+\index{points\-Are\-Opponents@{points\-Are\-Opponents}!game::Board@{game\-::\-Board}}
+\subsubsection[{points\-Are\-Opponents}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Board.\-points\-Are\-Opponents (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{a, }
+\item[{{\bf Position}}]{b}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_ac84d149dded8dc8b106cec222d20933c}
+Checks if Piece p and piece at pos are opponents. Spaces must be occupied \begin{DoxyReturn}{Returns}
+true if they are opponents, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_board_a33d619089bcaef94b641ecd6d014cfac}{\index{game\-::\-Board@{game\-::\-Board}!print\-Board@{print\-Board}}
+\index{print\-Board@{print\-Board}!game::Board@{game\-::\-Board}}
+\subsubsection[{print\-Board}]{\setlength{\rightskip}{0pt plus 5cm}void game.\-Board.\-print\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_a33d619089bcaef94b641ecd6d014cfac}
+Prints the 8x8 chessboard. Black pieces on the top row, white on the bottom \hypertarget{classgame_1_1_board_aeb0730b986f552300a5a68d7a68bd8d7}{\index{game\-::\-Board@{game\-::\-Board}!remove\-Piece\-From@{remove\-Piece\-From}}
+\index{remove\-Piece\-From@{remove\-Piece\-From}!game::Board@{game\-::\-Board}}
+\subsubsection[{remove\-Piece\-From}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} game.\-Board.\-remove\-Piece\-From (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_aeb0730b986f552300a5a68d7a68bd8d7}
+Removes a piece from its data structures. Must be called from a move function 
+\begin{DoxyParams}{Parameters}
+{\em pos,\-:} & position from which to remove piece \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgame_1_1_board_a707fca7d3091d8af2ba7e66fcea90e31}{\index{game\-::\-Board@{game\-::\-Board}!straight\-Or\-Diag\-Is\-Clear@{straight\-Or\-Diag\-Is\-Clear}}
+\index{straight\-Or\-Diag\-Is\-Clear@{straight\-Or\-Diag\-Is\-Clear}!game::Board@{game\-::\-Board}}
+\subsubsection[{straight\-Or\-Diag\-Is\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Board.\-straight\-Or\-Diag\-Is\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{start, }
+\item[{{\bf Position}}]{end}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_board_a707fca7d3091d8af2ba7e66fcea90e31}
+Checks if a straight or diagonal path is clear. Must not be a one step move. 
+\begin{DoxyParams}{Parameters}
+{\em start} & and end positions, and the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if path is clear, false otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classgame_1_1_board_a43354b0544e528583e783c228b3016a3}{\index{game\-::\-Board@{game\-::\-Board}!B\-I\-S\-H\-O\-P@{B\-I\-S\-H\-O\-P}}
+\index{B\-I\-S\-H\-O\-P@{B\-I\-S\-H\-O\-P}!game::Board@{game\-::\-Board}}
+\subsubsection[{B\-I\-S\-H\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-B\-I\-S\-H\-O\-P = 4\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_a43354b0544e528583e783c228b3016a3}
+\hypertarget{classgame_1_1_board_a6495a2020e20b656f5e82cf55cae41f0}{\index{game\-::\-Board@{game\-::\-Board}!B\-L\-A\-C\-K@{B\-L\-A\-C\-K}}
+\index{B\-L\-A\-C\-K@{B\-L\-A\-C\-K}!game::Board@{game\-::\-Board}}
+\subsubsection[{B\-L\-A\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-B\-L\-A\-C\-K = -\/1\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_a6495a2020e20b656f5e82cf55cae41f0}
+\hypertarget{classgame_1_1_board_a3208a9b2a809f279c2f33f2f87a9a68c}{\index{game\-::\-Board@{game\-::\-Board}!black\-King@{black\-King}}
+\index{black\-King@{black\-King}!game::Board@{game\-::\-Board}}
+\subsubsection[{black\-King}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} game.\-Board.\-black\-King}}\label{classgame_1_1_board_a3208a9b2a809f279c2f33f2f87a9a68c}
+\hypertarget{classgame_1_1_board_a7b235a9a7c1dbfd5373366fe8bd2c4e2}{\index{game\-::\-Board@{game\-::\-Board}!board@{board}}
+\index{board@{board}!game::Board@{game\-::\-Board}}
+\subsubsection[{board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} game.\-Board.\-board}}\label{classgame_1_1_board_a7b235a9a7c1dbfd5373366fe8bd2c4e2}
+\hypertarget{classgame_1_1_board_aef78af0593e283d51122b0aff9e98d3e}{\index{game\-::\-Board@{game\-::\-Board}!board\-Int\-Array@{board\-Int\-Array}}
+\index{board\-Int\-Array@{board\-Int\-Array}!game::Board@{game\-::\-Board}}
+\subsubsection[{board\-Int\-Array}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} game.\-Board.\-board\-Int\-Array}}\label{classgame_1_1_board_aef78af0593e283d51122b0aff9e98d3e}
+\hypertarget{classgame_1_1_board_acd643578da78ae9b61cbc0b962d03bc7}{\index{game\-::\-Board@{game\-::\-Board}!check@{check}}
+\index{check@{check}!game::Board@{game\-::\-Board}}
+\subsubsection[{check}]{\setlength{\rightskip}{0pt plus 5cm}int game.\-Board.\-check = {\bf Piece.\-E\-M\-P\-T\-Y}}}\label{classgame_1_1_board_acd643578da78ae9b61cbc0b962d03bc7}
+\hypertarget{classgame_1_1_board_ad8df367d654710a005091c644088879e}{\index{game\-::\-Board@{game\-::\-Board}!C\-L\-A\-S\-S\-I\-C@{C\-L\-A\-S\-S\-I\-C}}
+\index{C\-L\-A\-S\-S\-I\-C@{C\-L\-A\-S\-S\-I\-C}!game::Board@{game\-::\-Board}}
+\subsubsection[{C\-L\-A\-S\-S\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-C\-L\-A\-S\-S\-I\-C = 1\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_ad8df367d654710a005091c644088879e}
+\hypertarget{classgame_1_1_board_a1bac85e381255ac84399072df7b863e9}{\index{game\-::\-Board@{game\-::\-Board}!C\-U\-S\-T\-O\-M@{C\-U\-S\-T\-O\-M}}
+\index{C\-U\-S\-T\-O\-M@{C\-U\-S\-T\-O\-M}!game::Board@{game\-::\-Board}}
+\subsubsection[{C\-U\-S\-T\-O\-M}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-C\-U\-S\-T\-O\-M = 2\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_a1bac85e381255ac84399072df7b863e9}
+\hypertarget{classgame_1_1_board_a1919fd52c264639c24155b333495a11c}{\index{game\-::\-Board@{game\-::\-Board}!E\-M\-P\-T\-Y@{E\-M\-P\-T\-Y}}
+\index{E\-M\-P\-T\-Y@{E\-M\-P\-T\-Y}!game::Board@{game\-::\-Board}}
+\subsubsection[{E\-M\-P\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-E\-M\-P\-T\-Y = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_a1919fd52c264639c24155b333495a11c}
+\hypertarget{classgame_1_1_board_aa68c679fcb4744729d246aba79e7613a}{\index{game\-::\-Board@{game\-::\-Board}!F\-L\-Y@{F\-L\-Y}}
+\index{F\-L\-Y@{F\-L\-Y}!game::Board@{game\-::\-Board}}
+\subsubsection[{F\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-F\-L\-Y = 7\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_aa68c679fcb4744729d246aba79e7613a}
+\hypertarget{classgame_1_1_board_a7f0beeebc30980894df8aec277501cd5}{\index{game\-::\-Board@{game\-::\-Board}!F\-L\-Y\-T\-R\-A\-P@{F\-L\-Y\-T\-R\-A\-P}}
+\index{F\-L\-Y\-T\-R\-A\-P@{F\-L\-Y\-T\-R\-A\-P}!game::Board@{game\-::\-Board}}
+\subsubsection[{F\-L\-Y\-T\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-F\-L\-Y\-T\-R\-A\-P = 8\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_a7f0beeebc30980894df8aec277501cd5}
+\hypertarget{classgame_1_1_board_aa90eb06edcc6b4159963daa2bb83fa37}{\index{game\-::\-Board@{game\-::\-Board}!K\-I\-N\-G@{K\-I\-N\-G}}
+\index{K\-I\-N\-G@{K\-I\-N\-G}!game::Board@{game\-::\-Board}}
+\subsubsection[{K\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-K\-I\-N\-G = 6\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_aa90eb06edcc6b4159963daa2bb83fa37}
+\hypertarget{classgame_1_1_board_a805c2fa05787d3a91d4cbf34d74970f3}{\index{game\-::\-Board@{game\-::\-Board}!K\-N\-I\-G\-H\-T@{K\-N\-I\-G\-H\-T}}
+\index{K\-N\-I\-G\-H\-T@{K\-N\-I\-G\-H\-T}!game::Board@{game\-::\-Board}}
+\subsubsection[{K\-N\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-K\-N\-I\-G\-H\-T = 3\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_a805c2fa05787d3a91d4cbf34d74970f3}
+\hypertarget{classgame_1_1_board_abeabe8126dcd677e8570991415155513}{\index{game\-::\-Board@{game\-::\-Board}!P\-A\-W\-N@{P\-A\-W\-N}}
+\index{P\-A\-W\-N@{P\-A\-W\-N}!game::Board@{game\-::\-Board}}
+\subsubsection[{P\-A\-W\-N}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-P\-A\-W\-N = 1\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_abeabe8126dcd677e8570991415155513}
+\hypertarget{classgame_1_1_board_a010790144c6c1e42d97ce588d1522184}{\index{game\-::\-Board@{game\-::\-Board}!Q\-U\-E\-E\-N@{Q\-U\-E\-E\-N}}
+\index{Q\-U\-E\-E\-N@{Q\-U\-E\-E\-N}!game::Board@{game\-::\-Board}}
+\subsubsection[{Q\-U\-E\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-Q\-U\-E\-E\-N = 5\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_a010790144c6c1e42d97ce588d1522184}
+\hypertarget{classgame_1_1_board_a6e93b6ff58a5e29c8067eaf569acd7d1}{\index{game\-::\-Board@{game\-::\-Board}!R\-O\-O\-K@{R\-O\-O\-K}}
+\index{R\-O\-O\-K@{R\-O\-O\-K}!game::Board@{game\-::\-Board}}
+\subsubsection[{R\-O\-O\-K}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-R\-O\-O\-K = 2\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_a6e93b6ff58a5e29c8067eaf569acd7d1}
+\hypertarget{classgame_1_1_board_ad3b4223ca4e14051a8bdd78a95b38071}{\index{game\-::\-Board@{game\-::\-Board}!W\-H\-I\-T\-E@{W\-H\-I\-T\-E}}
+\index{W\-H\-I\-T\-E@{W\-H\-I\-T\-E}!game::Board@{game\-::\-Board}}
+\subsubsection[{W\-H\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}final int game.\-Board.\-W\-H\-I\-T\-E = 1\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_board_ad3b4223ca4e14051a8bdd78a95b38071}
+\hypertarget{classgame_1_1_board_ae468c82687902428871a19693c923c15}{\index{game\-::\-Board@{game\-::\-Board}!white\-King@{white\-King}}
+\index{white\-King@{white\-King}!game::Board@{game\-::\-Board}}
+\subsubsection[{white\-King}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} game.\-Board.\-white\-King}}\label{classgame_1_1_board_ae468c82687902428871a19693c923c15}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Volumes/\-Shared/\-Dropbox/\-Fall 13/\-C\-S 242/workspace/\-Chess/game/\hyperlink{_board_8java}{Board.\-java}\end{DoxyCompactItemize}

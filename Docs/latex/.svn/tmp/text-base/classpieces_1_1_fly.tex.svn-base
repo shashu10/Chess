@@ -1,0 +1,58 @@
+\hypertarget{classpieces_1_1_fly}{\section{pieces.\-Fly Class Reference}
+\label{classpieces_1_1_fly}\index{pieces.\-Fly@{pieces.\-Fly}}
+}
+Inheritance diagram for pieces.\-Fly\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpieces_1_1_fly}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpieces_1_1_fly_a90c1e86b5ead75232aeff42f5a7b4178}{Fly} (int \hyperlink{classpieces_1_1_piece_ae40d6201d0aed36f369dd9d8f55892e3}{piece\-Type}, Board my\-Board, int x, int y)
+\item 
+\hyperlink{classpieces_1_1_fly_affbd143fa129ce1c7a0017979576cd21}{Fly} (int \hyperlink{classpieces_1_1_piece_ae40d6201d0aed36f369dd9d8f55892e3}{piece\-Type})
+\item 
+boolean \hyperlink{classpieces_1_1_fly_a836ab8c05aa6120a14320f7cc9da6a0f}{can\-Move\-Between} (Position start, Position end)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classpieces_1_1_fly_a90c1e86b5ead75232aeff42f5a7b4178}{\index{pieces\-::\-Fly@{pieces\-::\-Fly}!Fly@{Fly}}
+\index{Fly@{Fly}!pieces::Fly@{pieces\-::\-Fly}}
+\subsubsection[{Fly}]{\setlength{\rightskip}{0pt plus 5cm}pieces.\-Fly.\-Fly (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\-Type, }
+\item[{Board}]{my\-Board, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_fly_a90c1e86b5ead75232aeff42f5a7b4178}
+Constructor No check to verify if piece\-Type is a Archer. It is up to the caller to verify. \hypertarget{classpieces_1_1_fly_affbd143fa129ce1c7a0017979576cd21}{\index{pieces\-::\-Fly@{pieces\-::\-Fly}!Fly@{Fly}}
+\index{Fly@{Fly}!pieces::Fly@{pieces\-::\-Fly}}
+\subsubsection[{Fly}]{\setlength{\rightskip}{0pt plus 5cm}pieces.\-Fly.\-Fly (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\-Type}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_fly_affbd143fa129ce1c7a0017979576cd21}
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classpieces_1_1_fly_a836ab8c05aa6120a14320f7cc9da6a0f}{\index{pieces\-::\-Fly@{pieces\-::\-Fly}!can\-Move\-Between@{can\-Move\-Between}}
+\index{can\-Move\-Between@{can\-Move\-Between}!pieces::Fly@{pieces\-::\-Fly}}
+\subsubsection[{can\-Move\-Between}]{\setlength{\rightskip}{0pt plus 5cm}boolean pieces.\-Fly.\-can\-Move\-Between (
+\begin{DoxyParamCaption}
+\item[{Position}]{start, }
+\item[{Position}]{end}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_fly_a836ab8c05aa6120a14320f7cc9da6a0f}
+Check if the piece can move from start to end location. \begin{DoxyReturn}{Returns}
+true if it can. false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Volumes/\-Shared/\-Dropbox/\-Fall 13/\-C\-S 242/workspace/\-Chess/pieces/\hyperlink{_fly_8java}{Fly.\-java}\end{DoxyCompactItemize}

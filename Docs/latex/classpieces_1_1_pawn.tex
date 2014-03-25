@@ -1,0 +1,72 @@
+\hypertarget{classpieces_1_1_pawn}{\section{pieces.\-Pawn Class Reference}
+\label{classpieces_1_1_pawn}\index{pieces.\-Pawn@{pieces.\-Pawn}}
+}
+Inheritance diagram for pieces.\-Pawn\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpieces_1_1_pawn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpieces_1_1_pawn_afba214edbf76842349a8081436d65905}{Pawn} (int \hyperlink{classpieces_1_1_piece_ae40d6201d0aed36f369dd9d8f55892e3}{piece\-Type}, Board my\-Board, int x, int y)
+\item 
+\hyperlink{classpieces_1_1_pawn_adb247ab1ea60ba83ced124ce94776180}{Pawn} (int \hyperlink{classpieces_1_1_piece_ae40d6201d0aed36f369dd9d8f55892e3}{piece\-Type})
+\item 
+boolean \hyperlink{classpieces_1_1_pawn_a1786e32a231e36a9f68e5c55b5e957a0}{can\-Move\-Between} (Position start, Position end)
+\item 
+boolean \hyperlink{classpieces_1_1_pawn_ae977b1dff93961350fe4130639bc83f3}{is\-Pawn\-Move} (Position start, Position end, Board board)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classpieces_1_1_pawn_afba214edbf76842349a8081436d65905}{\index{pieces\-::\-Pawn@{pieces\-::\-Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!pieces::Pawn@{pieces\-::\-Pawn}}
+\subsubsection[{Pawn}]{\setlength{\rightskip}{0pt plus 5cm}pieces.\-Pawn.\-Pawn (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\-Type, }
+\item[{Board}]{my\-Board, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_pawn_afba214edbf76842349a8081436d65905}
+Constructor No check to verify if piece\-Type is a pawn. It is up to the caller to verify. \hypertarget{classpieces_1_1_pawn_adb247ab1ea60ba83ced124ce94776180}{\index{pieces\-::\-Pawn@{pieces\-::\-Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!pieces::Pawn@{pieces\-::\-Pawn}}
+\subsubsection[{Pawn}]{\setlength{\rightskip}{0pt plus 5cm}pieces.\-Pawn.\-Pawn (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\-Type}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_pawn_adb247ab1ea60ba83ced124ce94776180}
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classpieces_1_1_pawn_a1786e32a231e36a9f68e5c55b5e957a0}{\index{pieces\-::\-Pawn@{pieces\-::\-Pawn}!can\-Move\-Between@{can\-Move\-Between}}
+\index{can\-Move\-Between@{can\-Move\-Between}!pieces::Pawn@{pieces\-::\-Pawn}}
+\subsubsection[{can\-Move\-Between}]{\setlength{\rightskip}{0pt plus 5cm}boolean pieces.\-Pawn.\-can\-Move\-Between (
+\begin{DoxyParamCaption}
+\item[{Position}]{start, }
+\item[{Position}]{end}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_pawn_a1786e32a231e36a9f68e5c55b5e957a0}
+Check if the piece can move from start to end location. \begin{DoxyReturn}{Returns}
+true if it can. false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classpieces_1_1_pawn_ae977b1dff93961350fe4130639bc83f3}{\index{pieces\-::\-Pawn@{pieces\-::\-Pawn}!is\-Pawn\-Move@{is\-Pawn\-Move}}
+\index{is\-Pawn\-Move@{is\-Pawn\-Move}!pieces::Pawn@{pieces\-::\-Pawn}}
+\subsubsection[{is\-Pawn\-Move}]{\setlength{\rightskip}{0pt plus 5cm}boolean pieces.\-Pawn.\-is\-Pawn\-Move (
+\begin{DoxyParamCaption}
+\item[{Position}]{start, }
+\item[{Position}]{end, }
+\item[{Board}]{board}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_pawn_ae977b1dff93961350fe4130639bc83f3}
+Checks if pawn is moving in the right direction and returns the number of ranks changed \begin{DoxyReturn}{Returns}
+-\/1 if not moving ahead, number of ranks moving otherwise (including 0) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Volumes/\-Shared/\-Dropbox/\-Fall 13/\-C\-S 242/workspace/\-Chess/pieces/\hyperlink{_pawn_8java}{Pawn.\-java}\end{DoxyCompactItemize}

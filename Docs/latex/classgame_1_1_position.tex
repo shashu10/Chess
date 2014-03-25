@@ -1,0 +1,269 @@
+\hypertarget{classgame_1_1_position}{\section{game.\-Position Class Reference}
+\label{classgame_1_1_position}\index{game.\-Position@{game.\-Position}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgame_1_1_position_a6d808698b920b1303255dbfd3752c624}{Position} (int \hyperlink{classgame_1_1_position_a84cd22aa467b66df4e31bf76da2fbb48}{x}, int \hyperlink{classgame_1_1_position_aa59625ace3e203e899d47f125388f751}{y})  throws Illegal\-Argument\-Exception 
+\item 
+int \hyperlink{classgame_1_1_position_acbd282a0971588996755cd5e93f4223f}{get\-Y} ()
+\item 
+int \hyperlink{classgame_1_1_position_acb39c75958db4e53de13d36d1e3e60f7}{get\-X} ()
+\item 
+void \hyperlink{classgame_1_1_position_a7962873f3d9c5fd080182b6e2442991a}{set\-Y} (int \hyperlink{classgame_1_1_position_aa59625ace3e203e899d47f125388f751}{y})
+\item 
+void \hyperlink{classgame_1_1_position_a16856b850188a64e0bc1a0fbaa8f1668}{set\-X} (int \hyperlink{classgame_1_1_position_a84cd22aa467b66df4e31bf76da2fbb48}{x})
+\item 
+boolean \hyperlink{classgame_1_1_position_a645c06a3b25e172c94e64aefe668c645}{equals} (\hyperlink{classgame_1_1_position}{Position} p)
+\item 
+boolean \hyperlink{classgame_1_1_position_ac95c086ef91c7b730fbd02afe56de54b}{equals} (int \hyperlink{classgame_1_1_position_a84cd22aa467b66df4e31bf76da2fbb48}{x}, int \hyperlink{classgame_1_1_position_aa59625ace3e203e899d47f125388f751}{y})
+\item 
+boolean \hyperlink{classgame_1_1_position_a07a94fb941b9afc80bbc628d6efd882f}{not\-Equals} (\hyperlink{classgame_1_1_position}{Position} p)
+\item 
+boolean \hyperlink{classgame_1_1_position_a354a3678f38322fbb815bcfdf1c173c0}{not\-Equals} (int \hyperlink{classgame_1_1_position_a84cd22aa467b66df4e31bf76da2fbb48}{x}, int \hyperlink{classgame_1_1_position_aa59625ace3e203e899d47f125388f751}{y})
+\item 
+boolean \hyperlink{classgame_1_1_position_ab082cb1ae101f75203976ec250005638}{is\-Straight\-To} (\hyperlink{classgame_1_1_position}{Position} p)
+\item 
+boolean \hyperlink{classgame_1_1_position_a5cd53a853944e8cb4efcd4f439bdd1ab}{is\-Diag\-To} (\hyperlink{classgame_1_1_position}{Position} p)
+\item 
+boolean \hyperlink{classgame_1_1_position_a102a4057f6bc97e2f914fc9369770727}{is\-Straight\-Or\-Diag\-To} (\hyperlink{classgame_1_1_position}{Position} p)
+\item 
+boolean \hyperlink{classgame_1_1_position_ae31d424c5820d6cc5ed92326ad247c86}{is\-Next\-To} (\hyperlink{classgame_1_1_position}{Position} p)
+\item 
+boolean \hyperlink{classgame_1_1_position_aeb458be389f964686f2d30aca2ebbc26}{is\-L\-To} (\hyperlink{classgame_1_1_position}{Position} p)
+\item 
+boolean \hyperlink{classgame_1_1_position_a7f264329a355226c14160f5148d64aee}{is\-Two\-Spaces\-From} (\hyperlink{classgame_1_1_position}{Position} p)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classgame_1_1_position_aa59625ace3e203e899d47f125388f751}{y}
+\item 
+int \hyperlink{classgame_1_1_position_a84cd22aa467b66df4e31bf76da2fbb48}{x}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents location on the board \begin{DoxyAuthor}{Author}
+Shashank Bharadwaj 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Wed, 4 Sep 2013
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x,\-:} & Columns a-\/h \\
+\hline
+{\em y,\-:} & Rows 1-\/8 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgame_1_1_position_a6d808698b920b1303255dbfd3752c624}{\index{game\-::\-Position@{game\-::\-Position}!Position@{Position}}
+\index{Position@{Position}!game::Position@{game\-::\-Position}}
+\subsubsection[{Position}]{\setlength{\rightskip}{0pt plus 5cm}game.\-Position.\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) throws Illegal\-Argument\-Exception}}\label{classgame_1_1_position_a6d808698b920b1303255dbfd3752c624}
+Constructs a valid (x,y) position tuple on the board. 
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinate \\
+\hline
+{\em y} & coordinate \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if coordinates are illegal \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgame_1_1_position_a645c06a3b25e172c94e64aefe668c645}{\index{game\-::\-Position@{game\-::\-Position}!equals@{equals}}
+\index{equals@{equals}!game::Position@{game\-::\-Position}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_a645c06a3b25e172c94e64aefe668c645}
+Checks if calling object is equal to parameter p 
+\begin{DoxyParams}{Parameters}
+{\em Positoin} & p to check with calling position object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if positions are equal, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_ac95c086ef91c7b730fbd02afe56de54b}{\index{game\-::\-Position@{game\-::\-Position}!equals@{equals}}
+\index{equals@{equals}!game::Position@{game\-::\-Position}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-equals (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_ac95c086ef91c7b730fbd02afe56de54b}
+Checks if calling object is equal to coordinate x,y 
+\begin{DoxyParams}{Parameters}
+{\em Coordinate} & x,y to check with calling position object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if positions are equal, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_acb39c75958db4e53de13d36d1e3e60f7}{\index{game\-::\-Position@{game\-::\-Position}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!game::Position@{game\-::\-Position}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int game.\-Position.\-get\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_acb39c75958db4e53de13d36d1e3e60f7}
+Getter \begin{DoxyReturn}{Returns}
+x coordinate 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_acbd282a0971588996755cd5e93f4223f}{\index{game\-::\-Position@{game\-::\-Position}!get\-Y@{get\-Y}}
+\index{get\-Y@{get\-Y}!game::Position@{game\-::\-Position}}
+\subsubsection[{get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int game.\-Position.\-get\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_acbd282a0971588996755cd5e93f4223f}
+Getter \begin{DoxyReturn}{Returns}
+y coordinate 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_a5cd53a853944e8cb4efcd4f439bdd1ab}{\index{game\-::\-Position@{game\-::\-Position}!is\-Diag\-To@{is\-Diag\-To}}
+\index{is\-Diag\-To@{is\-Diag\-To}!game::Position@{game\-::\-Position}}
+\subsubsection[{is\-Diag\-To}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-is\-Diag\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_a5cd53a853944e8cb4efcd4f439bdd1ab}
+Checks if two positions are diagonally aligned 
+\begin{DoxyParams}{Parameters}
+{\em Positoin} & p to check with calling position object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_aeb458be389f964686f2d30aca2ebbc26}{\index{game\-::\-Position@{game\-::\-Position}!is\-L\-To@{is\-L\-To}}
+\index{is\-L\-To@{is\-L\-To}!game::Position@{game\-::\-Position}}
+\subsubsection[{is\-L\-To}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-is\-L\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_aeb458be389f964686f2d30aca2ebbc26}
+Checks if two positions are 2 spaces apart and 1 space to the side. 
+\begin{DoxyParams}{Parameters}
+{\em Positoin} & p to check with calling position object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_ae31d424c5820d6cc5ed92326ad247c86}{\index{game\-::\-Position@{game\-::\-Position}!is\-Next\-To@{is\-Next\-To}}
+\index{is\-Next\-To@{is\-Next\-To}!game::Position@{game\-::\-Position}}
+\subsubsection[{is\-Next\-To}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-is\-Next\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_ae31d424c5820d6cc5ed92326ad247c86}
+Checks if two positions are straight or diagonally next to each other 
+\begin{DoxyParams}{Parameters}
+{\em Positoin} & p to check with calling position object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_a102a4057f6bc97e2f914fc9369770727}{\index{game\-::\-Position@{game\-::\-Position}!is\-Straight\-Or\-Diag\-To@{is\-Straight\-Or\-Diag\-To}}
+\index{is\-Straight\-Or\-Diag\-To@{is\-Straight\-Or\-Diag\-To}!game::Position@{game\-::\-Position}}
+\subsubsection[{is\-Straight\-Or\-Diag\-To}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-is\-Straight\-Or\-Diag\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_a102a4057f6bc97e2f914fc9369770727}
+Checks if two positions are diagonally, horizontally or vertically aligned 
+\begin{DoxyParams}{Parameters}
+{\em Positoin} & p to check with calling position object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_ab082cb1ae101f75203976ec250005638}{\index{game\-::\-Position@{game\-::\-Position}!is\-Straight\-To@{is\-Straight\-To}}
+\index{is\-Straight\-To@{is\-Straight\-To}!game::Position@{game\-::\-Position}}
+\subsubsection[{is\-Straight\-To}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-is\-Straight\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_ab082cb1ae101f75203976ec250005638}
+Checks if two positions are horizontally or vertically aligned 
+\begin{DoxyParams}{Parameters}
+{\em Positoin} & p to check with calling position object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_a7f264329a355226c14160f5148d64aee}{\index{game\-::\-Position@{game\-::\-Position}!is\-Two\-Spaces\-From@{is\-Two\-Spaces\-From}}
+\index{is\-Two\-Spaces\-From@{is\-Two\-Spaces\-From}!game::Position@{game\-::\-Position}}
+\subsubsection[{is\-Two\-Spaces\-From}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-is\-Two\-Spaces\-From (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_a7f264329a355226c14160f5148d64aee}
+Checks if two positions are 2 spaces apart. Can be straight or diagonal 
+\begin{DoxyParams}{Parameters}
+{\em Positoin} & p to check with calling position object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_position_a07a94fb941b9afc80bbc628d6efd882f}{\index{game\-::\-Position@{game\-::\-Position}!not\-Equals@{not\-Equals}}
+\index{not\-Equals@{not\-Equals}!game::Position@{game\-::\-Position}}
+\subsubsection[{not\-Equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-not\-Equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_a07a94fb941b9afc80bbc628d6efd882f}
+Checks if positions are not equal \hypertarget{classgame_1_1_position_a354a3678f38322fbb815bcfdf1c173c0}{\index{game\-::\-Position@{game\-::\-Position}!not\-Equals@{not\-Equals}}
+\index{not\-Equals@{not\-Equals}!game::Position@{game\-::\-Position}}
+\subsubsection[{not\-Equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean game.\-Position.\-not\-Equals (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_a354a3678f38322fbb815bcfdf1c173c0}
+Checks if positions are not equal \hypertarget{classgame_1_1_position_a16856b850188a64e0bc1a0fbaa8f1668}{\index{game\-::\-Position@{game\-::\-Position}!set\-X@{set\-X}}
+\index{set\-X@{set\-X}!game::Position@{game\-::\-Position}}
+\subsubsection[{set\-X}]{\setlength{\rightskip}{0pt plus 5cm}void game.\-Position.\-set\-X (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_a16856b850188a64e0bc1a0fbaa8f1668}
+Setter \hypertarget{classgame_1_1_position_a7962873f3d9c5fd080182b6e2442991a}{\index{game\-::\-Position@{game\-::\-Position}!set\-Y@{set\-Y}}
+\index{set\-Y@{set\-Y}!game::Position@{game\-::\-Position}}
+\subsubsection[{set\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void game.\-Position.\-set\-Y (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_position_a7962873f3d9c5fd080182b6e2442991a}
+Setter 
+
+\subsection{Member Data Documentation}
+\hypertarget{classgame_1_1_position_a84cd22aa467b66df4e31bf76da2fbb48}{\index{game\-::\-Position@{game\-::\-Position}!x@{x}}
+\index{x@{x}!game::Position@{game\-::\-Position}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}int game.\-Position.\-x\hspace{0.3cm}{\ttfamily [private]}}}\label{classgame_1_1_position_a84cd22aa467b66df4e31bf76da2fbb48}
+\hypertarget{classgame_1_1_position_aa59625ace3e203e899d47f125388f751}{\index{game\-::\-Position@{game\-::\-Position}!y@{y}}
+\index{y@{y}!game::Position@{game\-::\-Position}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}int game.\-Position.\-y\hspace{0.3cm}{\ttfamily [private]}}}\label{classgame_1_1_position_aa59625ace3e203e899d47f125388f751}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Volumes/\-Shared/\-Dropbox/\-Fall 13/\-C\-S 242/workspace/\-Chess/game/\hyperlink{_position_8java}{Position.\-java}\end{DoxyCompactItemize}

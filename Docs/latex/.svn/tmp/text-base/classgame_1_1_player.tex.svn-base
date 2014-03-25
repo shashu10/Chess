@@ -1,0 +1,58 @@
+\hypertarget{classgame_1_1_player}{\section{game.\-Player Class Reference}
+\label{classgame_1_1_player}\index{game.\-Player@{game.\-Player}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgame_1_1_player_ae18b394caa2431ee490e6b22ed8de25b}{Player} (String \hyperlink{classgame_1_1_player_a81574b540b57c9a8035da00a1bcd41ca}{name}, int \hyperlink{classgame_1_1_player_a78e50f5f23d0c3f75abb86e1e9c6f63d}{color}, \hyperlink{classgame_1_1_board}{Board} \hyperlink{classgame_1_1_player_aaf8469c870979c5277f9a1397b421c7c}{board})
+\item 
+int \hyperlink{classgame_1_1_player_aa8471c95246290dfc29cb22ef2a96950}{get\-Color} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classgame_1_1_player_a81574b540b57c9a8035da00a1bcd41ca}{name}
+\item 
+int \hyperlink{classgame_1_1_player_a78e50f5f23d0c3f75abb86e1e9c6f63d}{color}
+\item 
+\hyperlink{classgame_1_1_board}{Board} \hyperlink{classgame_1_1_player_aaf8469c870979c5277f9a1397b421c7c}{board}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgame_1_1_player_ae18b394caa2431ee490e6b22ed8de25b}{\index{game\-::\-Player@{game\-::\-Player}!Player@{Player}}
+\index{Player@{Player}!game::Player@{game\-::\-Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}game.\-Player.\-Player (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{int}]{color, }
+\item[{{\bf Board}}]{board}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_player_ae18b394caa2431ee490e6b22ed8de25b}
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgame_1_1_player_aa8471c95246290dfc29cb22ef2a96950}{\index{game\-::\-Player@{game\-::\-Player}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!game::Player@{game\-::\-Player}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}int game.\-Player.\-get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgame_1_1_player_aa8471c95246290dfc29cb22ef2a96950}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classgame_1_1_player_aaf8469c870979c5277f9a1397b421c7c}{\index{game\-::\-Player@{game\-::\-Player}!board@{board}}
+\index{board@{board}!game::Player@{game\-::\-Player}}
+\subsubsection[{board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} game.\-Player.\-board\hspace{0.3cm}{\ttfamily [private]}}}\label{classgame_1_1_player_aaf8469c870979c5277f9a1397b421c7c}
+\hypertarget{classgame_1_1_player_a78e50f5f23d0c3f75abb86e1e9c6f63d}{\index{game\-::\-Player@{game\-::\-Player}!color@{color}}
+\index{color@{color}!game::Player@{game\-::\-Player}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}int game.\-Player.\-color\hspace{0.3cm}{\ttfamily [private]}}}\label{classgame_1_1_player_a78e50f5f23d0c3f75abb86e1e9c6f63d}
+\hypertarget{classgame_1_1_player_a81574b540b57c9a8035da00a1bcd41ca}{\index{game\-::\-Player@{game\-::\-Player}!name@{name}}
+\index{name@{name}!game::Player@{game\-::\-Player}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}String game.\-Player.\-name\hspace{0.3cm}{\ttfamily [private]}}}\label{classgame_1_1_player_a81574b540b57c9a8035da00a1bcd41ca}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Volumes/\-Shared/\-Dropbox/\-Fall 13/\-C\-S 242/workspace/\-Chess/game/\hyperlink{_player_8java}{Player.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,135 @@
+\hypertarget{classgame_1_1_mover}{\section{game.\-Mover Class Reference}
+\label{classgame_1_1_mover}\index{game.\-Mover@{game.\-Mover}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classgame_1_1_mover_a659d56fe896ef67c7482e4bbc98b0ca8}{try\-To\-Move} (\hyperlink{classgame_1_1_position}{Position} start, \hyperlink{classgame_1_1_position}{Position} end, \hyperlink{classgame_1_1_board}{Board} board)
+\item 
+static void \hyperlink{classgame_1_1_mover_aac4f2ed847a535d459f704661c30b4f0}{next\-Turn} (\hyperlink{classgame_1_1_board}{Board} board)
+\item 
+static boolean \hyperlink{classgame_1_1_mover_a5d5b626da9047ed9c2924a2995f20f4d}{straight\-Or\-Diag\-Is\-Clear} (\hyperlink{classgame_1_1_position}{Position} start, \hyperlink{classgame_1_1_position}{Position} end, \hyperlink{classgame_1_1_board}{Board} board)
+\item 
+static boolean \hyperlink{classgame_1_1_mover_a125909deeb9fe1319801e2604702c1af}{is\-One\-Step} (\hyperlink{classgame_1_1_position}{Position} start, \hyperlink{classgame_1_1_position}{Position} end, \hyperlink{classgame_1_1_board}{Board} b)
+\item 
+static boolean \hyperlink{classgame_1_1_mover_acec661da2237784c6b568453a79e8a35}{is\-In\-Check} (int color, \hyperlink{classgame_1_1_board}{Board} board)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classgame_1_1_mover_aab6015cb025cf194fb0bba8263fbdd45}{undo\-Move} (\hyperlink{classgame_1_1_position}{Position} start, \hyperlink{classgame_1_1_position}{Position} end, \hyperlink{classgame_1_1_board}{Board} board, Piece p)
+\item 
+static Piece \hyperlink{classgame_1_1_mover_a4f8b699c251b25e227ab084e8d5f8c95}{move} (\hyperlink{classgame_1_1_position}{Position} start, \hyperlink{classgame_1_1_position}{Position} end, \hyperlink{classgame_1_1_board}{Board} board)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Moving mechanism for chess program \begin{DoxyAuthor}{Author}
+Shashank Bharadwaj 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Wed, 4 Sep 2013 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgame_1_1_mover_acec661da2237784c6b568453a79e8a35}{\index{game\-::\-Mover@{game\-::\-Mover}!is\-In\-Check@{is\-In\-Check}}
+\index{is\-In\-Check@{is\-In\-Check}!game::Mover@{game\-::\-Mover}}
+\subsubsection[{is\-In\-Check}]{\setlength{\rightskip}{0pt plus 5cm}static boolean game.\-Mover.\-is\-In\-Check (
+\begin{DoxyParamCaption}
+\item[{int}]{color, }
+\item[{{\bf Board}}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_mover_acec661da2237784c6b568453a79e8a35}
+Checks if a king is in check 
+\begin{DoxyParams}{Parameters}
+{\em color,\-:} & Checks if this color team is in check. \\
+\hline
+{\em board} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True player is in check, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_mover_a125909deeb9fe1319801e2604702c1af}{\index{game\-::\-Mover@{game\-::\-Mover}!is\-One\-Step@{is\-One\-Step}}
+\index{is\-One\-Step@{is\-One\-Step}!game::Mover@{game\-::\-Mover}}
+\subsubsection[{is\-One\-Step}]{\setlength{\rightskip}{0pt plus 5cm}static boolean game.\-Mover.\-is\-One\-Step (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{start, }
+\item[{{\bf Position}}]{end, }
+\item[{{\bf Board}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_mover_a125909deeb9fe1319801e2604702c1af}
+Checks if a move is one step. Comes before call to functions like straight\-Or\-Diag\-Is\-Clear. 
+\begin{DoxyParams}{Parameters}
+{\em start} & and end positions, and the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if path is clear, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_mover_a4f8b699c251b25e227ab084e8d5f8c95}{\index{game\-::\-Mover@{game\-::\-Mover}!move@{move}}
+\index{move@{move}!game::Mover@{game\-::\-Mover}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}static Piece game.\-Mover.\-move (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{start, }
+\item[{{\bf Position}}]{end, }
+\item[{{\bf Board}}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classgame_1_1_mover_a4f8b699c251b25e227ab084e8d5f8c95}
+Removes piece from start and puts it in end. Start is set to null. Should only be called from \hyperlink{classgame_1_1_mover}{Mover} class. \hypertarget{classgame_1_1_mover_aac4f2ed847a535d459f704661c30b4f0}{\index{game\-::\-Mover@{game\-::\-Mover}!next\-Turn@{next\-Turn}}
+\index{next\-Turn@{next\-Turn}!game::Mover@{game\-::\-Mover}}
+\subsubsection[{next\-Turn}]{\setlength{\rightskip}{0pt plus 5cm}static void game.\-Mover.\-next\-Turn (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_mover_aac4f2ed847a535d459f704661c30b4f0}
+Changes turns after a successful move \hypertarget{classgame_1_1_mover_a5d5b626da9047ed9c2924a2995f20f4d}{\index{game\-::\-Mover@{game\-::\-Mover}!straight\-Or\-Diag\-Is\-Clear@{straight\-Or\-Diag\-Is\-Clear}}
+\index{straight\-Or\-Diag\-Is\-Clear@{straight\-Or\-Diag\-Is\-Clear}!game::Mover@{game\-::\-Mover}}
+\subsubsection[{straight\-Or\-Diag\-Is\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}static boolean game.\-Mover.\-straight\-Or\-Diag\-Is\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{start, }
+\item[{{\bf Position}}]{end, }
+\item[{{\bf Board}}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_mover_a5d5b626da9047ed9c2924a2995f20f4d}
+Checks if a straight or diagonal path is clear. Must not be a one step move. 
+\begin{DoxyParams}{Parameters}
+{\em start} & and end positions, and the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if path is clear, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_mover_a659d56fe896ef67c7482e4bbc98b0ca8}{\index{game\-::\-Mover@{game\-::\-Mover}!try\-To\-Move@{try\-To\-Move}}
+\index{try\-To\-Move@{try\-To\-Move}!game::Mover@{game\-::\-Mover}}
+\subsubsection[{try\-To\-Move}]{\setlength{\rightskip}{0pt plus 5cm}static boolean game.\-Mover.\-try\-To\-Move (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{start, }
+\item[{{\bf Position}}]{end, }
+\item[{{\bf Board}}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classgame_1_1_mover_a659d56fe896ef67c7482e4bbc98b0ca8}
+Tries to move a piece from start to end position  start and end must be on the board. 
+\begin{DoxyParams}{Parameters}
+{\em start} & and end positions, and the board object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on successful move, false on failure. 
+\end{DoxyReturn}
+\hypertarget{classgame_1_1_mover_aab6015cb025cf194fb0bba8263fbdd45}{\index{game\-::\-Mover@{game\-::\-Mover}!undo\-Move@{undo\-Move}}
+\index{undo\-Move@{undo\-Move}!game::Mover@{game\-::\-Mover}}
+\subsubsection[{undo\-Move}]{\setlength{\rightskip}{0pt plus 5cm}static void game.\-Mover.\-undo\-Move (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{start, }
+\item[{{\bf Position}}]{end, }
+\item[{{\bf Board}}]{board, }
+\item[{Piece}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classgame_1_1_mover_aab6015cb025cf194fb0bba8263fbdd45}
+Undoes move if unsuccessful 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Volumes/\-Shared/\-Dropbox/\-Fall 13/\-C\-S 242/workspace/\-Chess/game/\hyperlink{_mover_8java}{Mover.\-java}\end{DoxyCompactItemize}

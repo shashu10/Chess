@@ -1,0 +1,208 @@
+\hypertarget{classpieces_1_1_piece}{\section{pieces.\-Piece Class Reference}
+\label{classpieces_1_1_piece}\index{pieces.\-Piece@{pieces.\-Piece}}
+}
+Inheritance diagram for pieces.\-Piece\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classpieces_1_1_piece}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpieces_1_1_piece_a9f739de98fb95a5c379bddec6fa05a9f}{Piece} (int \hyperlink{classpieces_1_1_piece_ae40d6201d0aed36f369dd9d8f55892e3}{piece\-Type}, Board my\-Board, int x, int y)  throws Illegal\-Argument\-Exception
+\item 
+\hyperlink{classpieces_1_1_piece_a6cb26e7b2633c754553bf9e32d73f267}{Piece} (int \hyperlink{classpieces_1_1_piece_ae40d6201d0aed36f369dd9d8f55892e3}{piece\-Type})
+\item 
+boolean \hyperlink{classpieces_1_1_piece_a2217ef2be3a64bac127d9092f4ec4125}{can\-Move\-Between} (Position start, Position end)
+\item 
+int \hyperlink{classpieces_1_1_piece_a0a0c19217dbf20dc4b91b40798fb3083}{get\-Piece\-Type} ()
+\item 
+int \hyperlink{classpieces_1_1_piece_adfb40e69bb9e5a2f21a33a1e91682c44}{get\-Color} ()
+\item 
+Position \hyperlink{classpieces_1_1_piece_a74e034990e5f39e58ef48404102d65dd}{get\-Pos} ()
+\item 
+void \hyperlink{classpieces_1_1_piece_ac6422f94714df2fcddab8dc7a9372e4a}{set\-Pos} (Position \hyperlink{classpieces_1_1_piece_a9a3b5cf20c198c74a04cea615815b11c}{pos})
+\item 
+void \hyperlink{classpieces_1_1_piece_a3ac139a19545ca7736a850d4df5ad0c1}{set\-Board} (Board my\-Board)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classpieces_1_1_piece_a5d79a14b2b47d6699449dd3e015f0392}{E\-M\-P\-T\-Y} = 0
+\item 
+static int \hyperlink{classpieces_1_1_piece_a625b30e964a9962f2909525a6da66467}{P\-A\-W\-N} = 1
+\item 
+static int \hyperlink{classpieces_1_1_piece_abd3221f0cd505d49ca331c79264cb16f}{R\-O\-O\-K} = 2
+\item 
+static int \hyperlink{classpieces_1_1_piece_a594fad243368a3532079b3705fb18c00}{K\-N\-I\-G\-H\-T} = 3
+\item 
+static int \hyperlink{classpieces_1_1_piece_a61cc411a0431bb85a06365792d051a16}{B\-I\-S\-H\-O\-P} = 4
+\item 
+static int \hyperlink{classpieces_1_1_piece_a6bf04fb81c4004dbdf7ffe388d0d5709}{Q\-U\-E\-E\-N} = 5
+\item 
+static int \hyperlink{classpieces_1_1_piece_a21aac8b997842296b02cc95dc7caf482}{K\-I\-N\-G} = 6
+\item 
+static int \hyperlink{classpieces_1_1_piece_a63587ad284faac66495ede78b2c835d2}{A\-R\-C\-H\-E\-R} = 7
+\item 
+static int \hyperlink{classpieces_1_1_piece_a096ca129d441937377c6303f8a9b47dd}{P\-E\-A\-S\-A\-N\-T} = 8
+\item 
+static final int \hyperlink{classpieces_1_1_piece_a06ca63ba013da56fa10ccde66da622c7}{W\-H\-I\-T\-E} = 1
+\item 
+static final int \hyperlink{classpieces_1_1_piece_ab569c22ea0d43da6e1e9e1722b7f41b1}{B\-L\-A\-C\-K} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classpieces_1_1_piece_a1ceedc99f8855c1fca9839aa5a69db69}{color}
+\item 
+int \hyperlink{classpieces_1_1_piece_ae40d6201d0aed36f369dd9d8f55892e3}{piece\-Type}
+\item 
+Position \hyperlink{classpieces_1_1_piece_a9a3b5cf20c198c74a04cea615815b11c}{pos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract class to represent a piece on the board. Each subclass must implement a unique can\-Move\-Between function \begin{DoxyAuthor}{Author}
+Shashank Bharadwaj 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Wed, 4 Sep 2013 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classpieces_1_1_piece_a9f739de98fb95a5c379bddec6fa05a9f}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{Piece}]{\setlength{\rightskip}{0pt plus 5cm}pieces.\-Piece.\-Piece (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\-Type, }
+\item[{Board}]{my\-Board, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) throws Illegal\-Argument\-Exception}}\label{classpieces_1_1_piece_a9f739de98fb95a5c379bddec6fa05a9f}
+Constructs a \hyperlink{classpieces_1_1_piece}{Piece} with given type, color and position 
+\begin{DoxyParams}{Parameters}
+{\em piece\-Type,\-:} & Pieces numbered 1-\/6. Black -\/ and White + values \\
+\hline
+{\em my\-Board} & \\
+\hline
+{\em x,\-:} & coordinate \\
+\hline
+{\em y,\-:} & coordinate \\
+\hline
+\end{DoxyParams}
+\hypertarget{classpieces_1_1_piece_a6cb26e7b2633c754553bf9e32d73f267}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{Piece}]{\setlength{\rightskip}{0pt plus 5cm}pieces.\-Piece.\-Piece (
+\begin{DoxyParamCaption}
+\item[{int}]{piece\-Type}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_piece_a6cb26e7b2633c754553bf9e32d73f267}
+Constructs a \hyperlink{classpieces_1_1_piece}{Piece} with given type and color 
+\begin{DoxyParams}{Parameters}
+{\em piece\-Type,\-:} & Pieces numbered 1-\/6. Black -\/ and White + values \\
+\hline
+{\em my\-Board} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classpieces_1_1_piece_a2217ef2be3a64bac127d9092f4ec4125}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!can\-Move\-Between@{can\-Move\-Between}}
+\index{can\-Move\-Between@{can\-Move\-Between}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{can\-Move\-Between}]{\setlength{\rightskip}{0pt plus 5cm}boolean pieces.\-Piece.\-can\-Move\-Between (
+\begin{DoxyParamCaption}
+\item[{Position}]{start, }
+\item[{Position}]{end}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_piece_a2217ef2be3a64bac127d9092f4ec4125}
+Check if the piece can move from start to end location. Must be overridden in subclass. \begin{DoxyReturn}{Returns}
+true if it can. false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classpieces_1_1_piece_adfb40e69bb9e5a2f21a33a1e91682c44}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_piece_adfb40e69bb9e5a2f21a33a1e91682c44}
+color getter \hypertarget{classpieces_1_1_piece_a0a0c19217dbf20dc4b91b40798fb3083}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!get\-Piece\-Type@{get\-Piece\-Type}}
+\index{get\-Piece\-Type@{get\-Piece\-Type}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{get\-Piece\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-get\-Piece\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_piece_a0a0c19217dbf20dc4b91b40798fb3083}
+piece\-Type getter \hypertarget{classpieces_1_1_piece_a74e034990e5f39e58ef48404102d65dd}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!get\-Pos@{get\-Pos}}
+\index{get\-Pos@{get\-Pos}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{get\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}Position pieces.\-Piece.\-get\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_piece_a74e034990e5f39e58ef48404102d65dd}
+position getter \hypertarget{classpieces_1_1_piece_a3ac139a19545ca7736a850d4df5ad0c1}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!set\-Board@{set\-Board}}
+\index{set\-Board@{set\-Board}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{set\-Board}]{\setlength{\rightskip}{0pt plus 5cm}void pieces.\-Piece.\-set\-Board (
+\begin{DoxyParamCaption}
+\item[{Board}]{my\-Board}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_piece_a3ac139a19545ca7736a850d4df5ad0c1}
+position setter \hypertarget{classpieces_1_1_piece_ac6422f94714df2fcddab8dc7a9372e4a}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!set\-Pos@{set\-Pos}}
+\index{set\-Pos@{set\-Pos}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{set\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void pieces.\-Piece.\-set\-Pos (
+\begin{DoxyParamCaption}
+\item[{Position}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classpieces_1_1_piece_ac6422f94714df2fcddab8dc7a9372e4a}
+position setter 
+
+\subsection{Member Data Documentation}
+\hypertarget{classpieces_1_1_piece_a63587ad284faac66495ede78b2c835d2}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!A\-R\-C\-H\-E\-R@{A\-R\-C\-H\-E\-R}}
+\index{A\-R\-C\-H\-E\-R@{A\-R\-C\-H\-E\-R}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{A\-R\-C\-H\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-A\-R\-C\-H\-E\-R = 7\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_a63587ad284faac66495ede78b2c835d2}
+\hypertarget{classpieces_1_1_piece_a61cc411a0431bb85a06365792d051a16}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!B\-I\-S\-H\-O\-P@{B\-I\-S\-H\-O\-P}}
+\index{B\-I\-S\-H\-O\-P@{B\-I\-S\-H\-O\-P}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{B\-I\-S\-H\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-B\-I\-S\-H\-O\-P = 4\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_a61cc411a0431bb85a06365792d051a16}
+\hypertarget{classpieces_1_1_piece_ab569c22ea0d43da6e1e9e1722b7f41b1}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!B\-L\-A\-C\-K@{B\-L\-A\-C\-K}}
+\index{B\-L\-A\-C\-K@{B\-L\-A\-C\-K}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{B\-L\-A\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}final int pieces.\-Piece.\-B\-L\-A\-C\-K = -\/1\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_ab569c22ea0d43da6e1e9e1722b7f41b1}
+\hypertarget{classpieces_1_1_piece_a1ceedc99f8855c1fca9839aa5a69db69}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!color@{color}}
+\index{color@{color}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-color\hspace{0.3cm}{\ttfamily [protected]}}}\label{classpieces_1_1_piece_a1ceedc99f8855c1fca9839aa5a69db69}
+\hypertarget{classpieces_1_1_piece_a5d79a14b2b47d6699449dd3e015f0392}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!E\-M\-P\-T\-Y@{E\-M\-P\-T\-Y}}
+\index{E\-M\-P\-T\-Y@{E\-M\-P\-T\-Y}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{E\-M\-P\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-E\-M\-P\-T\-Y = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_a5d79a14b2b47d6699449dd3e015f0392}
+\hypertarget{classpieces_1_1_piece_a21aac8b997842296b02cc95dc7caf482}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!K\-I\-N\-G@{K\-I\-N\-G}}
+\index{K\-I\-N\-G@{K\-I\-N\-G}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{K\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-K\-I\-N\-G = 6\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_a21aac8b997842296b02cc95dc7caf482}
+\hypertarget{classpieces_1_1_piece_a594fad243368a3532079b3705fb18c00}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!K\-N\-I\-G\-H\-T@{K\-N\-I\-G\-H\-T}}
+\index{K\-N\-I\-G\-H\-T@{K\-N\-I\-G\-H\-T}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{K\-N\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-K\-N\-I\-G\-H\-T = 3\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_a594fad243368a3532079b3705fb18c00}
+\hypertarget{classpieces_1_1_piece_a625b30e964a9962f2909525a6da66467}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!P\-A\-W\-N@{P\-A\-W\-N}}
+\index{P\-A\-W\-N@{P\-A\-W\-N}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{P\-A\-W\-N}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-P\-A\-W\-N = 1\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_a625b30e964a9962f2909525a6da66467}
+\hypertarget{classpieces_1_1_piece_a096ca129d441937377c6303f8a9b47dd}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!P\-E\-A\-S\-A\-N\-T@{P\-E\-A\-S\-A\-N\-T}}
+\index{P\-E\-A\-S\-A\-N\-T@{P\-E\-A\-S\-A\-N\-T}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{P\-E\-A\-S\-A\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-P\-E\-A\-S\-A\-N\-T = 8\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_a096ca129d441937377c6303f8a9b47dd}
+\hypertarget{classpieces_1_1_piece_ae40d6201d0aed36f369dd9d8f55892e3}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!piece\-Type@{piece\-Type}}
+\index{piece\-Type@{piece\-Type}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{piece\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-piece\-Type\hspace{0.3cm}{\ttfamily [protected]}}}\label{classpieces_1_1_piece_ae40d6201d0aed36f369dd9d8f55892e3}
+\hypertarget{classpieces_1_1_piece_a9a3b5cf20c198c74a04cea615815b11c}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!pos@{pos}}
+\index{pos@{pos}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{pos}]{\setlength{\rightskip}{0pt plus 5cm}Position pieces.\-Piece.\-pos\hspace{0.3cm}{\ttfamily [protected]}}}\label{classpieces_1_1_piece_a9a3b5cf20c198c74a04cea615815b11c}
+\hypertarget{classpieces_1_1_piece_a6bf04fb81c4004dbdf7ffe388d0d5709}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!Q\-U\-E\-E\-N@{Q\-U\-E\-E\-N}}
+\index{Q\-U\-E\-E\-N@{Q\-U\-E\-E\-N}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{Q\-U\-E\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-Q\-U\-E\-E\-N = 5\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_a6bf04fb81c4004dbdf7ffe388d0d5709}
+\hypertarget{classpieces_1_1_piece_abd3221f0cd505d49ca331c79264cb16f}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!R\-O\-O\-K@{R\-O\-O\-K}}
+\index{R\-O\-O\-K@{R\-O\-O\-K}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{R\-O\-O\-K}]{\setlength{\rightskip}{0pt plus 5cm}int pieces.\-Piece.\-R\-O\-O\-K = 2\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_abd3221f0cd505d49ca331c79264cb16f}
+\hypertarget{classpieces_1_1_piece_a06ca63ba013da56fa10ccde66da622c7}{\index{pieces\-::\-Piece@{pieces\-::\-Piece}!W\-H\-I\-T\-E@{W\-H\-I\-T\-E}}
+\index{W\-H\-I\-T\-E@{W\-H\-I\-T\-E}!pieces::Piece@{pieces\-::\-Piece}}
+\subsubsection[{W\-H\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}final int pieces.\-Piece.\-W\-H\-I\-T\-E = 1\hspace{0.3cm}{\ttfamily [static]}}}\label{classpieces_1_1_piece_a06ca63ba013da56fa10ccde66da622c7}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/\-Volumes/\-Shared/\-Dropbox/\-Fall 13/\-C\-S 242/workspace/\-Chess/pieces/\hyperlink{_piece_8java}{Piece.\-java}\end{DoxyCompactItemize}
